@@ -33,20 +33,22 @@
             <li><a href="#about-us"> About Us</a></li>
            <li><a href="#contact-us">Contact Us</a></li>
            <li>
-              <select class="dropdownm">
-                <li href="#toys"class="itemm">Toys</li>
-                <option class="itemm">Airplane</option>
-                <option class="itemm">Train</option>
-                <option class="itemm">Boat</option>
-                <option class="itemm">Car</option>
-                <option class="itemm">Block Set</option>
-              </select>
+
+              <div class="dropdown">
+                  <button class="dropdownbutton">Toys</button>
+                  <div class="dropdown-content">
+                  <a class="dropitemdown" href="#toy-airplane">Airplane</a>
+                  <a class="dropitemdown" href="#toy-train">Train</a>
+                  <a class="dropitemdown" href="#toy-boat">Boat</a>
+                  <a class="dropitemdown" href="#toy-car">Car</a>
+                  <a class="dropitemdown" href="#toy-set">Block Set</a>
+                  </div>
+                </div>
            </li>
          </ul>
        </div>
 
-
-
+       <!--Nav bar link: https://codepen.io/albizan/full/mMWdWZ-->
 
        <span class="navTrigger">
          <i></i>
@@ -59,231 +61,289 @@
    <section class="home"></section>
    <div style="height: 1000px;">
      <!-- just to make scrolling effect possible -->
-     <h2 class="myH2 mt-5">About Us</h2>
-     <p class="myP">
+     <h2 id="about-us" class="spacetop">ㅤ</h2>
+     <h2 class="myH2 mt-5 abt-c">About Us</h2>
+     <p class="myP abt-c">
        Our handcrafted classic, wooden toys are designed to bring out that
        slowness in your home. From Planes, trains, automobiles and boats,
        playsets, all of our wooden toys are designed to spark imagination. The
        going may be a little slower, but oh the things you’ll see along the
        way!
      </p>
-     <p class="myP">
+     <p class="myP abt-c">
        Since 2018, Little Bird Toys has delighted families looking for quality
        children’s toys. Our collection of heirloom quality products are built
        to stand the test of time and to be enjoyed from sibling to sibling and
        generation to generation.
      </p>
 
-     <h2 id="toys" class="myH2 underline mb-5">Our Toys:</h2>
+     <h2 id="toy-airplane" class="spacetop">ㅤ</h2>
+     <h2 id="toys" class="myH2 underline t-c mb-5">Our Toys:</h2>
+
+          <!-- just to make scrolling effect possible -->
 
 <!--Toy airplane start-->
-<!-- Slideshow container -->
-
-
-<h2 class="myH3">Toy Airplane</h2>
+<div class="container">
+<h2 class="myH3 t-c">Toy Airplane</h2>
 <img
-id="toy-airplane"
 class="photos"
 src="https://i.imgur.com/yMkR06i.jpg"
 alt="Toy Airplane"
 />
+</div>
 
+<div class="card card-nav myh2 container container-fluid desc mt-5">
+  <div class="card-body">
+    <p class="card-text">Wooden Airplane Toy. Defying gravity and soaring in the sky is every boys dream. Keep him dreaming big with this classic wooden airplane made by us, here at Little Bird Toys in Bound Brook, NJ</p>
+  </div>
+</div>
 
-         <div class="myH2 container">
+<div class="container card-nav mt-5 container-fluid">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card card-nav myh2 desc">
+        <div class="card-body">
+          <p class="card-text">The airplane comes ready to fly with a kid-safe Natural Harvest Finish and a propeller that spins</p>
+        </div>
+      </div>
+     </div>
+    <div class="col-sm">
+      <div class="card card-nav myh2 desc">
+        <div class="card-body">
+          <p class="card-text">The dimensions of the Airplane is approximately 3.5"H x 7"L x 7"W</p>
+        </div>
+      </div>
+        </div>
+  </div>
+</div>
 
+  <div class="card card-nav myh2 container container-fluid desc">
+    <div class="card-body">
+      <p class="card-text">The Airplane Comes with Real Rolling Wheels and Spinning Propellers</p>
+      <p class="card-text">Made out of Solid Wood - Built to Last for a Lifetime of Play</p>
+      <p class="card-text">Perfect Creative Gift for Toddlers</p>
+      <p class="card-text">Safe for Young Kids - Comes with a Non-Toxic Finish!</p>
+    </div>
+  </div>
+  <!--Toy airplane end-->
 
-           <h2 class="desc">
-               Wooden Airplane Toy. Defying gravity and soaring in the sky is every boys dream. Keep him dreaming big with this classic wooden airplane made by us, here at Little Bird Toys in Bound Brook, NJ.
-
-           </h2>
-           <h2 class="desc">
-               The airplane comes ready to fly with a kid-safe Natural Harvest Finish and a propeller that spins.
-
-           </h2>
-           <h2 class="desc">
-               The dimensions of the Airplane is approximately 3.5"H x 7"L x 7"W .
-
-           </h2>
-           <h2 class="desc">
-               The Airplane Comes with Real Rolling Wheels and Spinning Propellers.
-
-           </h2>
-           <h2 class="desc">
-               Made out of Solid Wood - Built to Last for a Lifetime of Play.
-
-           </h2>
-           <h2 class="desc">
-               Perfect Creative Gift for Toddlers.
-
-           </h2>
-           <h2 class="desc">
-               Safe for Young Kids - Comes with a Non-Toxic Finish!
-
-           </h2>
-       </div>
-     <!--Toy airplane end-->
-
+  <h2 id="toy-train" class="spacetop">ㅤ</h2>
      <!--Toy train start-->
-     <h2 class="myH3">Toy Train</h2>
+     <h2 class="myH3 t-c">Toy Train</h2>
      <img
-       id="toy-train"
        class="photos"
        src="https://i.imgur.com/KsewSgK.jpg"
        alt="Full Toy Train"
      />
-     <div class="myH2 container">
-       <h2 class="desc">
-         beautiful handmade wooden train set - Engine and three interchangeable
-         cars Handmade detailed artwork made of real beech wood.
-       </h2>
-       <h2 class="desc">
-         Wonderful Christmas gift! Large size - 84 cm length, 11 height and 13
-         width Moving wheel mechanism.
-       </h2>
-       <h2 class="desc">
-         Fully ecological product, only natural materials. High quality and
-         durable.
-       </h2>
-       <h2 class="desc">
-         Suitable for children from 3 years old Lots of fun guaranteed at any
-         age!
-       </h2>
-       <h2 class="desc">This set can be painted using wood paint.</h2>
-       <h2 class="desc">
-         Theses toys are #timeless and can be passed down for generations to
-         come.
-       </h2>
-       <h2 class="desc">
-         Please note that these toys have small parts that could break off if
-         used inappropriately.
-       </h2>
-   </div>
+
+
+
+     <div class="card card-nav myh2 container container-fluid desc mt-5">
+      <div class="card-body">
+        <p class="card-text"> Beautiful handmade wooden train set - Engine and three interchangeable cars Handmade detailed artwork made of real beech wood.</p>
+      </div>
+    </div>
+
+    <div class="container card-nav mt-5 container-fluid">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card card-nav myh2 desc">
+            <div class="card-body">
+              <p class="card-text">Wonderful Christmas gift! Large size - 84 cm length, 11 height and 13 width Moving wheel mechanism.</p>
+            </div>
+          </div>
+         </div>
+        <div class="col-sm">
+          <div class="card card-nav myh2 desc">
+            <div class="card-body">
+              <p class="card-text">Fully ecological product, only natural materials. High quality and durable.</p>
+            </div>
+          </div>
+            </div>
+      </div>
+    </div>
+
+      <div class="card card-nav myh2 container container-fluid desc">
+        <div class="card-body">
+          <p class="card-text">Suitable for children from 3 years old Lots of fun guaranteed at any age!</p>
+          <p class="card-text">This set can be painted using wood paint</p>
+          <p class="card-text">Theses toys are #timeless and can be passed down for generations to come</p>
+          <p class="card-text">Please note that these toys have small parts that could break off if used inappropriately</p>
+        </div>
+      </div>
+
      <!--Toy train end-->
 
+     <h2 id="toy-boat" class="spacetop">ㅤ</h2>
 <!--Toy boat start-->
-<h2 class="myH3">Toy Boat</h2>
+<h2 class="myH3 t-c">Toy Boat</h2>
 <img
-id="toy-boat"
 class="photos"
-src="https://i.imgur.com/ZWT45uU.jpg"
+src="https://i.imgur.com/iUmeJJO.jpeg"
 alt="Toy Boat"
 />
 
-<div class="myH2 container">
-<h2 class="desc">
-   On the coast of Maine, "Lobstah" boats like this one are a common sight.
 
-</h2>
-<h2 class="desc">
-   This new wooden toy model really floats and makes a great bath toy.
-
-</h2>
-<h2 class="desc">
-   The safe and simple design encourages a child to use his or her own imagination.   Batteries not required!
-
-</h2>
-<h2 class="desc">
-   Handcrafted in Maine with soft and rounded corners and edges to nourish a child's senses and to be safe for toddlers.
-
-</h2>
-<h2 class="desc">
-   Built of solid Maine white pine and sturdy enough to withstand years of use before being passed down to the next generation.
-
-</h2>
-<h2 class="desc">
-   Boat comes with two peg lobster- people.
-
-</h2>
-<h2 class="desc">
-   SIZE : 10.5"W x 3.5"H
-
-</h2>
-<h2 class="desc">
-   MATERIAL : Solid White Pine
-
- </h2>
+<div class="card card-nav myh2 container container-fluid desc mt-5">
+  <div class="card-body">
+    <p class="card-text"> On the coast of Maine, "Lobstah" boats like this one are a common sight</p>
+  </div>
 </div>
+
+<div class="container card-nav mt-5 container-fluid">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card card-nav myh2 desc">
+        <div class="card-body">
+          <p class="card-text">This new wooden toy model really floats and makes a great bath toy</p>
+        </div>
+      </div>
+     </div>
+    <div class="col-sm">
+      <div class="card card-nav myh2 desc">
+        <div class="card-body">
+          <p class="card-text">The safe and simple design encourages a child to use his or her own imagination.   Batteries not required!</p>
+        </div>
+      </div>
+        </div>
+  </div>
+</div>
+
+  <div class="card card-nav myh2 container container-fluid desc">
+    <div class="card-body">
+      <p class="card-text">Handcrafted in Maine with soft and rounded corners and edges to nourish a child's senses and to be safe for toddlers</p>
+      <p class="card-text">Built of solid Maine white pine and sturdy enough to withstand years of use before being passed down to the next generation</p>
+      <p class="card-text">Boat comes with two peg lobster- people</p>
+      <p class="card-text">SIZE : 10.5"W x 3.5"H, made out of Solid White Pine</p>
+    </div>
+  </div>
+
 <!--Toy boat end-->
 
-
+<h2 id="toy-car" class="spacetop">ㅤ</h2>
 <!--Toy car start-->
-<h2 class="myH3">Toy Car</h2>
+<h2 class="myH3 t-c">Toy Car</h2>
 <img
-id="toy-car"
 class="photos"
 src="https://i.imgur.com/Xu09UpB.jpg"
 alt="Toy Car"
 />
 
-<div class="myH2 container">
-<h2 class="desc">
-   Beautifully handcrafted wooden car. One-of-a-kind - (the photos included for this item may not be the actual car that you will receive.
 
-</h2>
-<h2 class="desc">
-   All cars are the same size and construction).
 
-</h2>
-<h2 class="desc">
- Great toy that will inspire imaginative and active play. This car will be in your family for generations to come - think heirloom or keepsake.
-
-</h2>
-<h2 class="desc">
- Handcrafted from a variety of domestic and exotic hardwoods including maple, oak, mahogany, cherry woods, etc., coated with clear lacquer to enhance and hold the natural wood color. All edges are rounded over and sanded for a silky smooth finish.
-
-</h2>
-<h2 class="desc">
- Please be aware there may be choking hazards with small children. Toys have a few small parts that may break with excessive rough or improper use.
-
-</h2>
+<div class="card card-nav myh2 container container-fluid desc mt-5">
+  <div class="card-body">
+    <p class="card-text">Beautifully handcrafted wooden car. One-of-a-kind - (the photos included for this item may not be the actual car that you will receive</p>
+  </div>
 </div>
+
+<div class="container card-nav mt-5 container-fluid">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card card-nav myh2 desc">
+        <div class="card-body">
+          <p class="card-text">Handcrafted from a variety of domestic and exotic hardwoods including maple, oak, mahogany, cherry woods, etc., coated with clear lacquer to enhance and hold the natural wood color. All edges are rounded over and sanded for a silky smooth finish</p>
+        </div>
+      </div>
+     </div>
+    <div class="col-sm">
+      <div class="card card-nav myh2 desc">
+        <div class="card-body">
+          <p class="card-text">Great toy that will inspire imaginative and active play. This car will be in your family for generations to come - think heirloom or keepsake</p>
+        </div>
+      </div>
+        </div>
+  </div>
+</div>
+
+  <div class="card card-nav myh2 container container-fluid desc">
+    <div class="card-body">
+      <p class="card-text">Please be aware there may be choking hazards with small children. Toys have a few small parts that may break with excessive rough or improper use</p>
+      <p class="card-text">All cars are the same size and construction</p>
+
+    </div>
+  </div>
 <!--Toy car end-->
 
-
+<h2 id="toy-set" class="spacetop">ㅤ</h2>
 <!--Toy Block set start-->
-<h2 class="myH3">Toy Block Set</h2>
+<h2 class="myH3 t-c">Toy Block Set</h2>
 <img
-id="toy-set"
 class="photos"
 src="https://i.imgur.com/QRodev1.jpg"
 alt="Toy Set"
 />
 
-<div class="myH2 container">
-<h2 class="desc">
- High-Grade Quality: Hardwood blocks are sturdy, solid and safe for kids.
 
-</h2>
-<h2 class="desc">
- 72 naturally finished and smooth-sanded hardwood blocks. Case size is 13” L x 12” W x 2” H.
 
-</h2>
-<h2 class="desc">
- Packaged in a handsome, wooden storage crate for easy storage.
 
-</h2>
-<h2 class="desc">
- Suitable for children ages 3 and up.
-
-</h2>
-<h2 class="desc">
- Highly durable set for indoor or outdoor use including: lawns, patios, living rooms, preschools, kindergartens & anywhere else.
-
-</h2>
-<h2 class="desc">
- Make your own dream castle anywhere.  Block play helps promote creativity, independent play, cooperative play, fine motor skills and hand-eye coordination.
-
-</h2>
-<h2 class="desc">
- When building, children must consider proportions, symmetry, size and more, which benefit early cultivation of concepts.
-
-</h2>
-<h2 class="desc">
- This product is conducive to your child's imagination, allowing various kinds of combinations to be built
-
-</h2>
+<div class="card card-nav myh2 container container-fluid desc mt-5">
+  <div class="card-body">
+    <p class="card-text"> High-Grade Quality: Hardwood blocks are sturdy, solid and safe for kids</p>
+  </div>
 </div>
+
+<div class="container card-nav mt-5 container-fluid">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card card-nav myh2 desc">
+        <div class="card-body">
+          <p class="card-text">72 naturally finished and smooth-sanded hardwood blocks. Case size is 13” L x 12” W x 2” H.</p>
+        </div>
+      </div>
+     </div>
+    <div class="col-sm">
+      <div class="card card-nav myh2 desc">
+        <div class="card-body">
+          <p class="card-text">Make your own dream castle anywhere. Block play helps promote creativity, independent play, cooperative play, fine motor skills and hand-eye coordination</p>
+        </div>
+      </div>
+        </div>
+  </div>
+</div>
+
+  <div class="card card-nav myh2 container container-fluid desc">
+    <div class="card-body">
+      <p class="card-text">Highly durable set for indoor or outdoor use including: lawns, patios, living rooms, preschools, kindergartens & anywhere else.</p>
+      <p class="card-text">When building, children must consider proportions, symmetry, size and more, which benefit early cultivation of concepts.</p>
+      <p class="card-text">Packaged in a handsome, wooden storage crate for easy storage.</p>
+      <p class="card-text">Suitable for children ages 3 and up.</p>
+      <p class="card-text"> This product is conducive to your child's imagination, allowing various kinds of combinations to be built</p>
+    </div>
+  </div>
+
 <!-- Toy Block set end-->
+
+     <!-- just to make scrolling effect possible -->
+     <h2 id="contact-us" class="spacetop">ㅤ</h2>
+
+ <!--form field start-->
+<div class="card card-nav myh2 container container-fluid desc mt-5">
+  <div class="card-body">
+<main role="main">
+	<div class="contentWrapper">
+		<form action="" method="post" name="signUpForm" id="signUpForm" class="contacttext">
+			<fieldset id="signUp">
+				<legend class="contacttextsmall">Give Us Your Information To Contact Us</legend>
+
+					<label for="nameField">Name:</label>
+					<input id="nameField" name="nameField" type="text" class="textfield" value="First and Last Name" onFocus="clearName();" onBlur="resetName();">
+
+					<label for="phoneField">Phone:</label>
+					<input id="phoneField" name="phoneField" type="text" class="textfield" value="example: 212-123-1234" onFocus="clearPhone();" onBlur="resetPhone();">
+
+					<label for="emailField">E-Mail:</label>
+					<input id="emailField" name="emailField" type="text" class="textfield" value="insert your email" onFocus="clearEmail();" onBlur="resetEmail();">
+
+					<input id="submit" type="submit" name="submit" value="Sign Me Up!">
+
+			</fieldset>
+		</form>
+	</div>
+</main>
+  </div>
+</div>
+<!--form field end-->
 
 
 
@@ -306,7 +366,36 @@ alt="Toy Set"
    <!-- Footer -->
    <footer class="py-4 bg-dark text-white-50">
      <div class="container text-center">
-       <small>Copyright &copy;Little Bird</small>
+
+       <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <img class="social" src="https://www.kortegaard.co.uk/wp-content/uploads/2020/06/best-solutions-of-instagram-png-transparent-png-images-unique-white-instagram-logo-outline-of-white-instagram-logo-outline-copy.png" alt="insta logo">
+          </div>
+          <div class="col-sm">
+            <img class="social" src="https://pnggrid.com/wp-content/uploads/2021/04/White-Snapchat-Icon-Logo-1024x1008.png" alt="snap logo">
+          </div>
+          <div class="col-sm">
+            <img class="social" src="https://www.freeiconspng.com/uploads/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png" alt="facebook logo">
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-2">
+        <div class="row">
+          <div class="col-sm">
+            @official.little.bird.toys
+          </div>
+          <div class="col-sm">
+            @little.bird
+          </div>
+          <div class="col-sm">
+            @little bird toys
+          </div>
+        </div>
+      </div>
+      <small>Copyright &copy;Little Bird Toys</small>
+
      </div>
    </footer>
 

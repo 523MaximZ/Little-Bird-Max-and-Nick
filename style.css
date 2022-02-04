@@ -1,19 +1,58 @@
-.j-color{
-  background-color: white;
-
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 170%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: orange;
+  padding: 1px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: orange;
 }
 
+.j-color {
+  background-color: white;
+}
+
+.card-nav {
+  z-index: -1;
+  text-align: center;
+  border-width: 7px;
+  border-color: rgb(116, 79, 50);
+}
+
+.social {
+  width: 30px;
+}
+
+.py-4 {
+  font-size: 15px;
+}
 * {
   box-sizing: border-box;
 }
 
-
+.car-ind {
+  z-index: -1;
+}
 .nav-bird {
   width: 80px;
 }
 
 .photos {
-  width: 30%;
+  width: 40%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -363,10 +402,20 @@ body {
   background-color: rgb(67, 53, 42);
 }
 
+.abt-c {
+  color: white;
+  font-weight: 150px;
+}
+
+.t-c {
+  color: white;
+  font-weight: bold;
+}
+
 .myH2 {
   text-align: center;
   font-size: 60px;
-  font-family: system-ui;
+  font-family: cutive mono;
 }
 .myP {
   text-align: justify;
@@ -389,12 +438,13 @@ body {
 .myH3 {
   text-align: center;
   font-size: 40px;
-  font-family: system-ui;
+  font-family: Courier New;
 }
 
 .desc {
-  font-family: Candara;
-  font-size: 23px;
+  font-family: Courier New;
+  font-size: 18px;
+  font-weight: 500;
   margin-bottom: 30px;
 }
 
@@ -403,16 +453,7 @@ body {
 }
 
 .bg-img {
-  background-image: url("data:image/jpeg;base64,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");
-}
-
-.dropdownm {
-  margin-top: 18px;
-  font-size: 23px;
-  background-color: transparent;
-  color: white;
-  border-color: transparent;
-  hover
+  background-image: url("https://www.textures.com/system/gallery/photos/Wood/Fine%20Wood/126382/WoodFine0086_7_350.jpg");
 }
 
 .itemm {
@@ -421,4 +462,35 @@ body {
 
 .dropdownm:hover {
   color: orange;
+}
+
+.contacttext {
+  font-size: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contacttextsmall {
+  font-size: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.spacetop {
+  margin-bottom: 50px;
+}
+
+.dropdownbutton {
+  margin-top: -2px;
+  margin-left: -30px;
+  width: 100px;
+  height: 70px;
+  background-color: transparent;
+  color: white;
+  font-size: 23px;
+  border-color: transparent;
+}
+
+.dropitemdown {
+  background-color: rgb(67, 53, 42);
 }
